@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Todo App Container */
+.outer-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 80vw;
+  margin: 5vh auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+/* Todo App Heading */
+h1 {
+  background-color: violet;
+  text-align: center;
+  margin-top: 0;
+  padding: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Todo App Content Container */
+.inner-container {
+  border: 3px solid black;
+  width: 70vw;
+  padding: 20px;
+}
+
+/* Input Field */
+input {
+  height: 30px;
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-left: 20px;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 3px solid blue;
+}
+
+/* Container Holding Input Field and Buttons */
+.box-1 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Container Holding Buttons */
+.box-2 {
+  display: flex;
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: black;
+}
+
+/* Todo List */
+.list {
+  margin-top: 20px;
+}
+
+/* Todo Item Styling */
+.todo-item {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* Todo Item Buttons */
+.todo-buttons button {
+  margin-left: 5px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Edit Button */
+.todo-buttons button.edit {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+/* Delete Button */
+.todo-buttons button.delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Hover Effects */
+.todo-item:hover {
+  background-color: #e2e2e2;
+}
+
+.todo-buttons button:hover {
+  filter: brightness(0.9);
+}
+
+.outer-container {
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.inner-container {
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.box-1 input {
+  margin: 0.5rem;
+}
+
+.box-2 button {
+  margin: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
 }
